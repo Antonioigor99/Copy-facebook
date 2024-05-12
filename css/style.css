@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+html,body{
+    height: 100%;
+}
+.center{
+    max-width: 1200px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.clear{
+    clear: both; /*sempre que utilizarmos float temos que dar um clear para limitar nossas flutuacoes*/
+}
+
+/* body */
+header{
+    background-color: #0916d1b6;
+    padding: 8px 0;
+}
+.logo{
+    float: left;
+    color: white;
+}
+.logo h2{
+    font-size: 29px;
+    font-weight: normal;
+}
+form.form-login{
+    float: right;
+}
+.form-login .form-element{
+    display: inline-block;
+    margin-right: 15px;
+}
+.form-element p{
+    font-size: 14px;
+    color: white;
+}
+.form-element input[type=email],
+.form-element input[type=password]{
+    margin-top: 4px;
+    border: 0;
+    height: 22px;
+    padding-left: 3px;
+}
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: none ;
+    background: #012e69b6;
+    color: white;
+    padding: 5px 10px;
+}
+.form-element input[type=submit]:hover{
+    background:#1954ac ;
+}
+main{
+    background: linear-gradient(white, #5f9cf8);
+    padding: 40px 0;
+}
+.img-world{
+    float: left;
+    width: 60%;
+}
+.img-world img{
+    max-width: 100%;
+    border-right: 10px solid rgba(0,0,0,0.4);
+    border-bottom: 10px solid rgba(0,0,0,0.4) ;
+    border-radius: 10%;
+}
+.conteiner-create-accont{
+    width: 40%;
+    float: left;
+}
+.conteiner-create-accont h2{
+    color: black;
+    font-size: 36px;
+}
+.conteiner-create-accont h3{
+    font-size: 19px;
+    margin-top: 8px;
+    font-weight: normal;
+    color: rgb(30, 30, 30);
+}
+.w50{
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+.w100{
+    width: 100%;
+    float: right;
+    padding: 0 5px;
+
+}
+form.create-account input{
+    width: 100%;
+    margin-top: 8px;
+}
+form.create-account input[type=email],
+form.create-account input[type=text],
+form.create-account input[type=password]{
+    height: 40PX;
+    font-size: 26px;
+    border: 1px solid #a5dcff;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+form.create-account input[type=submit]{
+    height: 40px;
+    background: linear-gradient( #67ae55, #578843);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    max-width: 200px;
+    font-size: 19px;
+}
+form .w100 h2{
+    margin-top: 15px;
+    color: #1d2129;
+    font-size: 22px;
+    font-weight: normal;
+}
+.create-account .w100 .birth{
+    float: left;
+    margin-top: 5px;
+} 
+.input-radio{
+    float: left;
+    margin: 8px 10px;
+}
+.input-radio h2{
+    display: inline-block;
+}
+.input-radio input[type=radio]{
+    width: auto !important;
+    display: inline-block;
+}
+section.languages{
+    padding: 30px;
+    background: white;
+}
+section.languages a{
+    font-size: 12px;
+    color: #365899;
+    text-decoration: none;
+    padding-right: 15px;
+}
+section.languages a.selected-language{
+    color: #737373;
+}
+section.languages .center{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+/*responsividade*/
+@media screen and (max-width: 768px) {
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    form.form-login{
+        margin-top: 17px;
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    .form-login .form-element{
+        display: block;
+        margin: 10px 0;
+    }
+    .form-element p{
+        font-size: 14px;
+        color: white;
+    }
+    .form-element input[type=email],
+    .form-element input[type=password]{
+        margin-top: 4px;
+        border: 0;
+        height: 22px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 320px;
+    }
+    .img-world{
+        display: none;
+    }
+    .conteiner-create-accont{
+        width: 100%;
+    }
+}
